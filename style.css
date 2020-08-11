@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Herr+Von+Muellerhoff&family=Open+Sans&display=swap');
+:root{
+    --white: #fff;
+    --gold:#cf9133;
+    --pink: #ebb1d0;
+    --black: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+body{
+    font-family:  'Herr Von Muellerhoff', cursive;
+}
+
+.hero{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.hero, .button-awesome{
+    padding: 90px 0 0 200px;
+    right: 0;
+}
+
+header{
+    background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/back1.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    color: var(--white);
+    text-shadow: 3px 0px 2px rgba(73, 73, 73, 1);
+    font-size: 6rem;
+    text-align: left;
+    position: absolute;
+    margin-top: 15%;
+    left: 0;
+}
+
+/*NavBar*/
+.main-nav{
+    list-style: none;
+    float: right;
+    margin-top: 60px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main-nav li a{
+    color: var(--white);
+    text-shadow: 3px 0px 2px rgba(73, 73, 73, 1);
+    text-decoration: none;
+    font-size: 90%;
+    font-size: 3.5rem;
+}
+
+.main-nav li a:hover{
+    color: var(--pink);
+    border-bottom: 2px solid var(--pink);
+    transition: all 0.5s ease-in;
+    padding: 15px 0;
+}
+
+/*Logo*/
+.logo img{
+    height: 180px;
+    float: left;
+    margin-top: 30px;
+}
+
+/*Bouton*/
+.btn{
+    border: 1px solid var(--pink);
+    margin: 10px 30px;
+    color: var(--pink);
+    text-decoration: none;
+    border-radius: 12px;
+    margin-right: 15px;
+    font-size: 3.5rem;
+}
+
+.button-awesome{
+    margin-top: 100px;
+    margin-left: 270px;
+}
+
+.btn-half, .btn-full{
+    background-color: var(--pink);
+    color: var(--white);
+}
+
+/*.btn-full:hover{
+    background-color: var(--pink);
+    color: var(--white);
+    transition: all 0.5s ease-in;
+}*/
+
+/*texte*/
+.text-center{
+    font-size: 5rem;
+}
+
+.copy{
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 20px;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+h3:after{
+    width: 100px;
+    height: 2px;
+    background-color: var(--pink);
+    display: block;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 30px;
+    font-weight: 600;
+    
+}
+
+.features h3{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.arranging{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+/*icon*/
+.features i{
+    font-size: 50px;
+    color: var(--pink);
+    margin-left: 35%;
+}
+
+.features h4{
+    font-size: 4rem;
+    margin-left: 40px;
+}
+
+/*img camion*/
+.col-md-6, img{
+    max-width: 100%;
+  display: block;
+  position: relative;
+}
+
+/*Galerie photo*/
+.galerie-showcase{
+    margin-top: 60px;
+    list-style: none;
+    width: 100%;
+}
+
+.galerie-showcase li{
+    display: block;
+    width: 25%;
+    float: left;
+}
+
+.galerie-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.galerie-photo img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: all 0.5s ;
+}
+
+.galerie-photo img:hover{
+     transform: scale(1.05);
+}
+
+#galerie{
+    margin-top: 60px;
+}
+
+
+/*Mobile Phone*/
+.pic img{
+    width: 50%;
+    margin-left: 50%;
+    margin-top: 50px;
+    
+}
+ 
+.works-step{
+    font-size: 2.5rem;
+    margin-top: 100px;
+}
+
+.works-step div{
+    border:  2px solid var(--pink);
+    display: inline-block;
+    border-radius:50%;
+    border: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.clearfix{
+    zoom: 1;
+}
+
+.clearfix:after{
+    visibility: hidden;
+    content: ".";
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+.mobile{
+    margin-top: 60px;
+}
+
+
+/*produit*/
+#product{
+    margin-top: 100px;
+}
+
+#product img{
+    width: 100%;
+    margin-top: 50px;
+} 
+
+/*#product i{
+    color: var(--pink);
+}*/
+
+#product h4{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+#product p{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/*Map*/
+
+
+#map, iframe{
+    margin-top: 40px;
+    padding: 0px 0px 40px 0px;
+    position: relative;
+    width: 100%;        
+}
+
+#map, .col-md-4{
+    margin-top: 60px;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.map, li, a{
+    font-size: 2.5rem;
+    list-style: none;
+    color: var(--black);
+}
+
+.map ,a:hover{
+    text-decoration: none;
+    color: var(--pink);
+}
+
+.col-md-8, h3, .text-center{
+    margin-top: 60px;
+}
+ 
+/*contact*/
+#contact{
+  color: var(--white);
+}
+
+.cafeWrap{
+  background-image: url(img/image_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+}
+
+#cafe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+#contact-area{
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  position: relative;
+  padding: 0px 0px 60px 0px;
+}
+
+.moreDetails{
+  color: var(--white);
+}
+
+.con-title{
+  font-weight: 300;
+  font-size: 4rem;
+  margin: 30px;
+  padding-bottom: 30px;
+}
+
+.moreDetails p{
+  font-size: 16px;
+}
+
+.address{
+  list-style: none;
+  margin: 0;
+  padding: 10px 0px 0px 0px;
+}
+
+.address li{
+  color: var(--white);
+  font-weight: 500;
+  font-size: 3.5rem;
+  position: relative;
+  margin-bottom: 3%;
+}
+
+.address li i{
+  color: var(--white);
+  font-size: 35px;
+  position: absolute;
+  top: 5px;
+}
+
+.address li span{
+  padding-bottom: 10px;
+  position: relative;
+  left: 45px;
+}
+
+.form-control{
+  font-size: 25px;
+  color: var(--white);
+  box-shadow: none;
+  border: 1px solid var(--pink);
+  border-radius: 0px;
+  padding: 12px 12px;
+  height: auto;
+  background: rgba(255, 255, 255, 0.10);
+}
+
+.form-group input, .form-group textarea{
+  color: var(--white);
+}
+
+/*Social media*/
+#social{
+  background-color: rgba(0, 0, 0, 0.75) !important;
+  padding: 30px 0px 30px 0px;
+  position: relative;
+}
+
+.normal-txt{
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 100;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.socialinks{
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.social-icons{
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+.social-icons a{
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-size: 100%;
+}
+
+.facebook{
+  background-image: url(img/facebook-logo.png);
+}
+
+.instagram{
+  background-image: url(img/Instagram-logo.png);
+}
+
+/*footer*/
+footer{
+  width: 100%;
+  background: var(--black);
+  color: var(--white);
+}
+
+footer a{
+  color: var(--white);
+}
+
+.copyright{
+  margin: 0;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.copyright a{
+  color: var(--white);
+  text-decoration: none;
+}
+
+.copyright a:hover{
+  color: var(--pink);
+}
+
+
+/*visite salon*/
+#salon{
+  background-image: url(img/visit-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#salon h2{
+  text-align: center;
+  color: var(--white);
+  text-shadow: 3px 0px 2px rgba(73, 73, 73, 1);
+  font-size: 5rem;
+  margin: 60px;
+}
+
+#salon img{
+  margin: 40px;
+  box-shadow: 7px -5px 9px -1px rgba(73, 73, 73, 1);
+}
+
+.truck img{
+  box-shadow: none !important;
+}
+
+/*tarif*/
+#tarif{
+  background-image: url(img/tarif-bg.jpg);
+  background-size: cover;
+}
+
+#tarif h2{
+  text-align: center;
+  color: var(--black);
+  text-shadow: 3px 0px 2px #fff;
+  font-size: 6rem;
+  font-weight: bold;
+  margin: 60px 0 40px 0;
+  
+}
+
+#tarif li{
+  margin: 10px 10px 30px 10px;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#tarif p{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
